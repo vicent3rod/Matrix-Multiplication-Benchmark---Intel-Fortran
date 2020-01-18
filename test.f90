@@ -75,7 +75,7 @@ SUBROUTINE ioMatrix(m, n_matrix, name_file)
         !$OMP END PARALLEL DO
         close(1)
 
-        ! opening the file for reading
+        ! opening file for reading
         open (2, file = name_file, status = 'old')
         !$OMP PARALLEL DO
         do i = 1,n
@@ -100,7 +100,7 @@ implicit none
     WRITE(*,*)'****Parallel Matrix Multiplication****'
     call count_cores()
 
-    !  validate input
+    !   validate input
     call dimentionMatrix(n, key)
     !   allocate memory
     allocate(a(n,n),b(n,n),c(n,n),d(n,n),e(n,n))
@@ -119,7 +119,7 @@ implicit none
         write(unit=6,fmt=100) "Time to create matrix: ",finish-start," s."
 
     ELSE
-        !   GENERAR MATRICES EN MEMORIA
+        
         call cpu_time(start)
 
         call random_seed()
