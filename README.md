@@ -6,8 +6,7 @@ Program to compare the performances of matrix multiplications (N by N) in three 
 * matmul(a,b) function.
 * dgemm routine (INTEL MKL). 
 
-Testing with Intel® Xeon® Processor X5670.
-
+Testing with Intel® Xeon® Processor X5670. File I/O Available. 
 
 ### Tech
 
@@ -19,6 +18,8 @@ Testing with Intel® Xeon® Processor X5670.
 ```sh
 $ ifort test.f90 -fopenmp -mkl -g -traceback -O3 -xSSE3
 ```
+
+### Performance
 
 |Dimensions|Do-Loop                      |matmul|DGEMM                                        |
 |----------|-----------------------------|------|---------------------------------------------|
