@@ -1,8 +1,19 @@
 # Matrix Multiplication Benchmark - Intel Fortran
 
+### Overview
+Program to compare the performances of matrix multiplications (N by N) in three different ways: 
+* Triple do-loop (Traditional Parallel processing).
+* matmul(a,b) function.
+* dgemm routine (INTEL MKL). 
+
+Testing with Intel® Xeon® Processor X5670.
+
+
 ### Tech
 
 * [Intel Fortran Compiler](https://software.intel.com/en-us/fortran-compilers) - Builds high-performance applications with Intel processors.
+
+
 
 #### Building for source:
 ```sh
