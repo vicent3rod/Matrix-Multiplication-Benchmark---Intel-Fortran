@@ -1,8 +1,13 @@
 # Matrix Multiplication Benchmark - Intel Fortran
 
+#### Building for source:
+```sh
+$ ifort test.f90 -fopenmp -mkl -g -traceback -O3 -xSSE3
+```
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+MIT
 
 ## Acknowledgments
 
